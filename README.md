@@ -28,7 +28,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - website_sources:/usr/share/nginx/html:z
+      - website_sources:/usr/share/nginx/html/site1:z
     depends_on:
       - git-sync
     restart: always
